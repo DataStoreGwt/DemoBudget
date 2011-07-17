@@ -1,0 +1,33 @@
+<ui:UiBinder xmlns:ui='urn:ui:com.google.gwt.uibinder' 
+  xmlns:g='urn:import:com.google.gwt.user.client.ui'
+  xmlns:db='urn:import:com.google.gwt.user.datepicker.client'
+  xmlns:dt='urn:import:steveshrader.budget.client.widgets'
+  xmlns:e='urn:import:com.google.gwt.editor.ui.client'>
+
+  <ui:style src="../common.css">
+  .panel {
+  	text-align: right;
+    padding: 10px;
+  }    
+  </ui:style>
+  
+  <g:HTMLPanel>
+    <div class="{style.panel}">
+        
+      Date:
+      <db:DateBox ui:field="date" stylePrimaryName="{style.editField}" />
+      <br />
+      Amount:
+      <g:TextBox ui:field="displayAmount" stylePrimaryName="{style.editField}" />
+      <br />
+      Vendor:
+      <g:SuggestBox ui:field="vendor" stylePrimaryName="{style.editField}" />
+      <br />
+      Expense Type:
+      <g:SuggestBox ui:field="expenseType" stylePrimaryName="{style.editField}" />
+      <br />
+      Payment Type:
+      <g:SuggestBox ui:field="paymentType" stylePrimaryName="{style.editField}" />
+    </div>
+  </g:HTMLPanel>
+</ui:UiBinder>

@@ -1,0 +1,27 @@
+<ui:UiBinder xmlns:ui='urn:ui:com.google.gwt.uibinder' 
+             xmlns:g='urn:import:com.google.gwt.user.client.ui'
+             xmlns:budget='urn:import:steveshrader.budget.client.widgets'>
+  <ui:style src="common.css">
+    @external gwt-SplitLayoutPanel-VDragger;
+    .gwt-SplitLayoutPanel-VDragger {
+    	cursor: row-resize;
+    }
+  </ui:style>
+  <g:DockLayoutPanel unit='PX' stylePrimaryName="{style.main}">
+  
+    <g:east size='280'>
+        <g:SplitLayoutPanel>
+	       <g:north size='180'>
+		      <budget:ExpenseFilterWidget ui:field="filter" stylePrimaryName="{style.boxed}"/>
+		   </g:north>      
+		   <g:center>
+		      <budget:ExpenseSummaryWidget ui:field="summary" stylePrimaryName="{style.boxed}"/>
+		   </g:center>
+	    </g:SplitLayoutPanel>
+    </g:east>
+	<g:center>
+	    <budget:ExpenseListWidget ui:field="calendar" stylePrimaryName="{style.boxed}" />
+	</g:center>
+
+  </g:DockLayoutPanel>
+</ui:UiBinder>

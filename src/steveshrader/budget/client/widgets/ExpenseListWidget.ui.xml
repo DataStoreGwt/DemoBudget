@@ -1,0 +1,17 @@
+<ui:UiBinder xmlns:ui='urn:ui:com.google.gwt.uibinder' xmlns:g='urn:import:com.google.gwt.user.client.ui'
+  xmlns:cv='urn:import:com.google.gwt.user.cellview.client'>
+  <ui:style src="../common.css"
+    type="steveshrader.budget.client.widgets.ExpenseListWidget.Style">
+      .displayInline {
+      	display: inline;
+      }
+  </ui:style>
+  <g:DockLayoutPanel ui:field="dock" unit="PX">
+    <g:north size="24">
+      <g:Button stylePrimaryName="{style.displayInline}" ui:field="create">New Expense</g:Button>
+    </g:north>
+    <g:center>
+      <cv:CellTable ui:field="table" stylePrimaryName="{style.expenseTable}" />
+    </g:center>
+  </g:DockLayoutPanel>
+</ui:UiBinder>

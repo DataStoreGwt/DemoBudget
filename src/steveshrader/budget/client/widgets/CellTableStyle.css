@@ -1,0 +1,31 @@
+.cellTableCell {
+    height: 35px;
+    cursor: pointer;
+    padding: 2px 25px;
+}
+
+.cellTableHeader {
+	height: 35px;
+	border-bottom: 2px solid #60a6bf;
+    padding: 3px 25px;
+    text-align: left;
+    color: #4b4a4a;
+    text-shadow: #ddf 1px 1px 0;
+    overflow: hidden;
+}
+
+.cellTableEvenRow {
+	background: #fffaf0;
+}
+
+.cellTableEvenRowCell {
+    border: 2px solid #fffaf0;
+}
+
+.cellTableOddRow {
+    background: #fff8e8;
+}
+
+.cellTableOddRowCell {
+    border: 2px solid #fff8e8;
+}

@@ -1,0 +1,20 @@
+<ui:UiBinder xmlns:ui='urn:ui:com.google.gwt.uibinder'
+             xmlns:g='urn:import:com.google.gwt.user.client.ui'
+             xmlns:db='urn:import:com.google.gwt.user.datepicker.client'
+             xmlns:dt='urn:import:steveshrader.budget.client.widgets'>
+  <ui:style src="../common.css">
+    .button {
+    	margin-top: 15px;
+    }
+  </ui:style>
+  <g:FlowPanel styleName='{style.filter}'>
+    <g:Label>Begin:</g:Label>
+    <db:DateBox ui:field="startDate" stylePrimaryName="{style.editField}" />
+    <g:Label>End:</g:Label>
+    <db:DateBox ui:field="endDate" stylePrimaryName="{style.editField}" />
+    <g:Label>Vendor:</g:Label>
+    <g:SuggestBox ui:field="vendor" stylePrimaryName="{style.editField}" />
+    <g:Button ui:field="refresh" styleName="{style.button}">Refresh</g:Button>
+    <g:Button ui:field="clear" styleName="{style.button}">Clear</g:Button>
+  </g:FlowPanel>
+</ui:UiBinder>

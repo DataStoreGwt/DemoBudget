@@ -1,0 +1,53 @@
+.expenseTable {
+    position: static !important;
+    table-layout: fixed;
+    width: 100%;
+}
+      
+.editField {
+    display: inline;
+    width: 17.5em;
+}
+
+.rightAlign {
+    text-align: right;
+}
+
+.leftAlign {
+    text-align: left;
+}
+
+.centerAlign {
+    text-align: center;
+}
+
+.filter {
+    background-color: #e6ccb3;
+    padding: 0.5em;
+    line-height: 150%;
+}
+
+.boxed {
+    background-color: #eedbca;
+    border: thin solid #60a6bf;
+    margin: 2px 10px;
+    overflow: auto;
+    padding: 10px;
+}
+    
+.chart {
+    display: block;
+    background-color: white;
+    border: thin solid #60a6bf;
+    margin: 0px auto;
+    overflow: hidden;
+    padding: 5px;
+}
+
+.chart-top {
+    margin-top: 10px;
+}
+    
+.main {
+    margin: 5px;
+}

@@ -1,0 +1,66 @@
+<!DOCTYPE ui:UiBinder 
+  SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent"
+>
+<ui:UiBinder
+  xmlns:ui='urn:ui:com.google.gwt.uibinder'
+  xmlns:g='urn:import:com.google.gwt.user.client.ui'>
+
+  <ui:image field='backgroundPicture' src='backgroundPicture.jpg'/>
+  
+  <ui:style>
+
+  .statusDiv {
+  	position: fixed;
+  	top: 0px;
+  	left: 0px;
+    text-align: left;
+    margin: 1em;
+  }
+
+  .titleDiv {
+    margin-left: 230px;
+    margin-right: 230px;
+    text-align: center;
+    vertical-align: top;
+  }
+  
+  .title {
+  	margin: 2px;
+  	color: #eedbca;
+  	text-shadow: 3px 2px 1px #4b4a4a;
+  	font-size: 2.5em;
+  	font-weight: bolder;
+  }
+
+  .titleQuote {
+  	margin: 35px auto;
+  	color: #eedbca;
+    text-shadow: 1px 1px 0px #4b4a4a;
+  }
+  
+  @sprite .backgroundPicture {
+    gwt-image: 'backgroundPicture';
+    position: fixed;
+    top: 0px;
+    right: 0px;
+  }
+  
+  </ui:style>
+
+  <g:HTMLPanel>
+    <div class='{style.backgroundPicture}'/>
+
+    <div class="{style.titleDiv}">
+      <div class="{style.title}">Family Budgeting</div>
+      <div class="{style.titleQuote}"><g:InlineLabel ui:field='quote'>Money has no utility other than that arising from the possibility of obtaining other economic goods in exchange for it.  ~Ludwig von Mises</g:InlineLabel></div>
+    </div>
+
+    <div class="{style.statusDiv}">
+      <b><g:InlineLabel ui:field='userNickname'>x</g:InlineLabel></b><g:Hidden ui:field='userId'></g:Hidden>
+      &nbsp;
+      |
+      &nbsp;
+      <g:Anchor href='javascript:;' ui:field='signOutLink'>Sign out</g:Anchor>
+    </div>
+  </g:HTMLPanel>
+</ui:UiBinder>
